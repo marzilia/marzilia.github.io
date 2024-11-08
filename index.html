@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta type="description" content="ceci est mon portefolio stagiaire" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <link rel="stylesheet" href="styles/styles.css " type="text/css" />
+    <title>mon portefolio</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="boxed">
+        <div class="flex aligncenter space-between">
+          <button onclick="openmenu()" class="header-menu-mobile">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <a href="/" class="header-logo">
+            <img src="img/logo menu.png" alt="logo" />
+          </a>
+          <nav>
+            <ul class="header-menu">
+              <li><a href="#acceuil">Acceuil</a></li>
+              <li><a href="#à propos de moi">A propos de moi</a></li>
+              <li><a href="#compétences">Mes compétences</a></li>
+              <li><a href="#réalisations">Mes réalisations</a></li>
+              <li><a href="#contact">Contactez-moi</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="slider" id="acceuil">
+      <img
+        src="img/img fond portfolio.webp"
+        alt="img"
+        class="slider-background"
+      />
+      <div class="slider-content">
+        <h1>ZANETTI Marc</h1>
+        <p>je suis stagiare concépteur développeur web</p>
+      </div>
+    </div>
+    <div class="section" id="à propos de moi">
+      <div class="boxed">
+        <div class="flex tocolumn mcenter">
+          <div class="w40 wm100">
+            <h2 class="me">A propos de moi</h2>
+            <img src="img/marc.jpg.jpg" alt="img" class="profil-content" />
+          </div>
+          <div class="w60 wm100">
+            <p>
+              Actuellement chef de cuisine, je souhaite aujourd’hui donner un
+              nouveau tournant à ma carrière en intégrant la formation de
+              Concepteur développeur d’application proposé par O’clock, Mon
+              parcours m’a permis de développer des compétences telles que la
+              rigueur, l’organisation, l’autonomie dans la gestion du poste, la
+              créativité,la gestion des délais de production ou encore, la
+              gestion des problématiques quotidiennes et d’équipe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section blue">
+      <div class="boxed text-center">
+        <h2 id="compétences">Découvrez mes compétences</h2>
+        <div class="flex tocolumn">
+          <div class="w33 skill wm90 logo">
+            <img src="img/html png.png" alt="img" />
+          </div>
+          <div class="w33 skill wm90 logo">
+            <img src="img/logo css.png" alt="img" />
+          </div>
+          <div class="w33 skill wm90 logo">
+            <img src="img/logo js.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="réalisations">
+      <div class="boxed text-center">
+        <h2>mes réalisations</h2>
+        <div class="flex space-between">
+          <div class="w32 realisation">
+            <a href="">
+              <img src="img/pgw18home.jpg" alt="img" />
+              <h3>campus gaming</h3>
+            </a>
+          </div>
+          <div class="w32 realisation">
+            <a href="">
+              <img src="img/helium-maquette.png" alt="img" />
+              <h3>helium maquette</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section blue">
+      <div class="boxed text-center">
+        <h2 id="contact">contactez-moi</h2>
+        <div class="flex tocolumn space-between">
+          <div class="w32 contact wm100">
+            <a href="mailto:marczanetti13@gmail.fr">
+              <span class="material-icons icon">mail </span>
+              <span class="label">email</span>
+              <span class="value">marczanetti13@gmail.com</span>
+            </a>
+          </div>
+          <div class="w32 contact wm100">
+            <span class="icon"
+              ><img src="img/github.png" alt="img github"
+            /></span>
+            <a href="https://github.com/marzilia/marzilia.git">
+              <span class="label">github</span>
+              <span class="value">marzilia</span>
+            </a>
+          </div>
+          <div class="w32 contact wm100">
+            <a href="http://www.linkedin.com/in/marc-zanetti-0480b82b4">
+              <span class="icon"
+                ><img src="img/linkedin.png" alt="img linkedin" />
+              </span>
+              <span class="label">linkedin</span>
+              <span class="value">ZANETTI Marc</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/app.js"></script>
+</html>

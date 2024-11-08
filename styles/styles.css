@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: url(hand.cur),
+    pointer;
+}
+
+
+
+body {
+  .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+
+
+.slider {
+  width: 100%;
+  min-height: 80vh;
+  aspect-ratio: 16/9;
+  background: black;
+  position: relative;
+}
+
+.profil-content {
+  width: 25%;
+  position: center;
+  border-radius: 30%;
+  border: solid 5px rgb(214, 166, 21);
+  margin-left: 200px;
+
+}
+
+.slider-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(214, 166, 21);
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-decoration-color: black;
+
+}
+
+.me {
+  margin-left: 200px;
+}
+
+h3 {
+  color: black;
+
+}
+
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.slider-content {
+  color: rgb(214, 166, 21);
+  font-size: 2rem;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.boxed {
+  min-height: auto;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blue {
+  background: rgb(29, 29, 61);
+  color: black;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w32 {
+  width: 50%;
+}
+
+.contact {
+  color: black;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.skill img {
+  width: 300px;
+  margin-inline: 70px;
+}
+
+.realisation {
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.realisation a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.realisation img {
+  width: 50%;
+  height: 50%;
+  border-radius: 40px;
+  object-fit: cover;
+  filter: brightness(90%);
+  transition: .4s ease;
+}
+
+.realisation :hover img {
+  filter: brightness(60%)
+}
+
+.icon {
+  display: block;
+
+  font-size: 4rem;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.value {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.aligncenter {
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  padding-block: 10px;
+  box-shadow: 1px 1px 25px black;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-logo img {
+  width: 200px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-menu li a {
+  font-size: x-large;
+  gap: 30px;
+  color: black;
+  padding: 30px;
+  display: block;
+  box-sizing: border-box;
+  transition: .3s ease;
+}
+
+.header-menu li a:hover {
+  background-color: blueviolet;
+  color: yellow;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header-menu-mobile {
+  display: none;
+}
+
+
+@media(max-width:810px) {
+
+  header {
+    height: 70px !important;
+  }
+
+  .header-logo {
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    z-index: 991;
+
+  }
+
+  .header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    display: none;
+  }
+
+  .header-menu-mobile {
+    display: block;
+    border: 0px;
+    background-color: white;
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    transform: translateY(-50%);
+    z-index: 991;
+  }
+
+
+  .active {
+    display: flex;
+  }
+
+  .slider {
+    height: 60vh;
+  }
+
+  .slider-content {
+    width: 90%;
+  }
+
+  .slider-content p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-wrap: balance;
+
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+  }
+
+  h2 {
+    font-size: 1.50rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    text-wrap: balance;
+  }
+
+
+  .tocolumn {
+    flex-direction: column;
+  }
+
+  .mcenter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wm100 {
+    width: 100% !important;
+  }
+
+  .wm90 {
+    width: 20%;
+    justify-content: space-around;
+
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .boxed {
+    max-width: 90%;
+  }
+
+  .me {
+    padding-right: 50px;
+
+  }
+
+  .profil-content {
+    margin-left: 0px;
+    position: center;
+  }
+
+  .logo {
+    width: 3%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section blue {
+    text-align: center;
+    margin-right: 20px;
+  }
+
+
+}
