@@ -217,7 +217,7 @@ header {
 .header-menu li a:hover {
   background-color: blueviolet;
   color: yellow;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
