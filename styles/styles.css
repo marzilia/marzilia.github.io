@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  cursor: url(hand.cur),
-    pointer;
+  cursor: pointer;
 }
 
 
@@ -238,7 +237,7 @@ header {
     position: absolute;
     left: 20%;
     top: 5%;
-    z-index: 991;
+
 
   }
 
@@ -260,10 +259,9 @@ header {
     border: 0px;
     background-color: white;
     position: absolute;
-    left: 5px;
-    top: 50px;
+    left: 5%;
+    top: 50%;
     transform: translateY(-50%);
-    z-index: 991;
   }
 
 
